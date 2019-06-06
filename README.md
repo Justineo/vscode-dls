@@ -1,4 +1,6 @@
-# DLS for VSCode
+# Baidu DLS for VS Code
+
+[Marketplace](https://marketplace.visualstudio.com/items?itemName=justice360.vscode-dls)
 
 ## Features
 
