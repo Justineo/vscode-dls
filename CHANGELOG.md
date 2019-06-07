@@ -1,5 +1,13 @@
 # Changelog
 
+## [0.1.3] - 2019-06-07
+
+- Add equal variables to the documentation.
+
+## [0.1.1], [0.1.2] - 2019-06-06
+
+- Downgrade dependency for `vscode`.
+
 ## [0.1.0] - 2019-06-05
 
 ### Added

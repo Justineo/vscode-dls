@@ -4,7 +4,6 @@
 
 import * as vscode from 'vscode'
 import variables from 'less-plugin-dls/variables.json'
-import { appendFileSync } from 'fs'
 
 interface Variable {
   type:
@@ -16,7 +15,8 @@ interface Variable {
     | 'length'
     | 'string'
     | 'complex'
-  value: any
+  value: string
+  equals?: string[]
 }
 
 interface VariableMap {
@@ -48,8 +48,16 @@ export function activate(context: vscode.ExtensionContext) {
             `@${key}`,
             TypeMap[variable.type]
           )
+          const list = (variable.equals || []).map(key => `@${key}`).join('\n')
           completion.documentation = new vscode.MarkdownString(
-            `**Default value:**\n\n\`${variable.value}\``
+            [
+              '**Default value:**',
+              '',
+              '```text',
+              variable.value,
+              '```',
+              ...(list ? ['', '**Same as:**', '', '```text', list, '```'] : [])
+            ].join('\n')
           )
           return completion
         })
