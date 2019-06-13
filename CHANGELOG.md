@@ -1,5 +1,9 @@
 # Changelog
 
+## [0.2.0] - 2019-06-13
+
+- Updated to `less-plugin-dls@0.2.0`.
+
 ## [0.1.3] - 2019-06-07
 
 - Add equal variables to the documentation.
