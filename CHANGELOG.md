@@ -1,5 +1,9 @@
 # Changelog
 
+## [0.24.2] - 2019-10-08
+
+- Updated to `less-plugin-dls@0.24.2`.
+
 ## [0.24.0] - 2019-10-08
 
 - Updated to `less-plugin-dls@0.24.0`.
