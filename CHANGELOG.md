@@ -1,5 +1,9 @@
 # Changelog
 
+## [0.33.4] - 2020-03-09
+
+- Updated to `less-plugin-dls@0.33.4`.
+
 ## [0.33.3] - 2020-02-12
 
 - Updated to `less-plugin-dls@0.33.3`.
