@@ -1,5 +1,11 @@
 # Changelog
 
+## [0.35.0] - 2020-09-01
+
+- Updated to `less-plugin-dls@1.0.0-alpha.26`.
+- Added option to hide component-level tokens.
+- Added support for shortcut names for global tokens.
+
 ## [0.34.1] - 2020-05-25
 
 - Updated to `less-plugin-dls@1.0.0-alpha.11`.

@@ -28,13 +28,27 @@
   "devDependencies": {
     "@types/mocha": "^2.2.42",
     "@types/node": "^10.12.21",
-    "less-plugin-dls": "^1.0.0-alpha.11",
+    "less-plugin-dls": "^1.0.0-alpha.26",
     "ts-loader": "^6.0.2",
     "tslint": "^5.12.1",
     "typescript": "^3.3.1",
-    "vscode": "^1.1.28",
+    "vscode": "^1.1.37",
     "webpack": "^4.33.0",
     "webpack-cli": "^3.3.11"
   },
-  "publisher": "justice360"
+  "publisher": "justice360",
+  "contributes": {
+    "configuration": [
+      {
+        "title": "Baidu DLS",
+        "properties": {
+          "DLS.showComponentTokens": {
+            "type": "boolean",
+            "default": false,
+            "description": "Show component level design tokens during auto completion."
+          }
+        }
+      }
+    ]
+  }
 }
