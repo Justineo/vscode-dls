@@ -1,5 +1,9 @@
 # Changelog
 
+## [0.35.1] - 2020-09-08
+
+- Refine sorting.
+
 ## [0.35.0] - 2020-09-01
 
 - Updated to `less-plugin-dls@1.0.0-alpha.26`.

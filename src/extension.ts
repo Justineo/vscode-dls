@@ -65,7 +65,7 @@ const shortcutItems = keys(shortcuts)
     );
 
     completion.documentation = normalizeMap[variable.value] || variable.value;
-    completion.detail = `@${name}: ${variable.value}`;
+    completion.detail = `@${name}`;
     completion.filterText = `@${code}`;
     completion.sortText = name.replace(/(\d+)/g, (_, num) =>
       num.padStart(4, "0")
@@ -106,7 +106,7 @@ function registerProvider(context: ExtensionContext) {
             completion.documentation =
               normalizeMap[variable.value] || variable.value;
             completion.detail = variable.value;
-            completion.sortText = key.replace(/(\d+)/g, (_, num) =>
+            completion.sortText = '_' + key.replace(/(\d+)/g, (_, num) =>
               num.padStart(4, "0")
             );
             return completion;

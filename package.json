@@ -27,14 +27,14 @@
   },
   "devDependencies": {
     "@types/mocha": "^2.2.42",
-    "@types/node": "^10.12.21",
-    "less-plugin-dls": "^1.0.0-alpha.26",
-    "ts-loader": "^6.0.2",
-    "tslint": "^5.12.1",
-    "typescript": "^3.3.1",
+    "@types/node": "^10.17.28",
+    "less-plugin-dls": "^1.0.0-alpha.27",
+    "ts-loader": "^6.2.2",
+    "tslint": "^5.20.1",
+    "typescript": "^3.9.7",
     "vscode": "^1.1.37",
-    "webpack": "^4.33.0",
-    "webpack-cli": "^3.3.11"
+    "webpack": "^4.44.1",
+    "webpack-cli": "^3.3.12"
   },
   "publisher": "justice360",
   "contributes": {
