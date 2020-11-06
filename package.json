@@ -10,7 +10,8 @@
     "Other"
   ],
   "activationEvents": [
-    "onLanguage:less"
+    "onLanguage:less",
+    "onLanguage:vue"
   ],
   "repository": {
     "type": "git",
@@ -28,7 +29,7 @@
   "devDependencies": {
     "@types/mocha": "^2.2.42",
     "@types/node": "^10.17.28",
-    "less-plugin-dls": "^1.0.0-alpha.27",
+    "less-plugin-dls": "^1.0.0-alpha.32",
     "ts-loader": "^6.2.2",
     "tslint": "^5.20.1",
     "typescript": "^3.9.7",

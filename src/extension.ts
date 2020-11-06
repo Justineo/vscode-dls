@@ -106,9 +106,8 @@ function registerProvider(context: ExtensionContext) {
             completion.documentation =
               normalizeMap[variable.value] || variable.value;
             completion.detail = variable.value;
-            completion.sortText = '_' + key.replace(/(\d+)/g, (_, num) =>
-              num.padStart(4, "0")
-            );
+            completion.sortText =
+              "_" + key.replace(/(\d+)/g, (_, num) => num.padStart(4, "0"));
             return completion;
           })
           .concat(shortcutItems);
