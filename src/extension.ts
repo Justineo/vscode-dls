@@ -84,7 +84,7 @@ function registerProvider(context: ExtensionContext) {
     .get(CONFIG.SHOW_COMPONENT_TOKENS);
 
   const provider = languages.registerCompletionItemProvider(
-    "less",
+    ["less", "vue"],
     {
       provideCompletionItems() {
         const keys = Object.keys(vars).filter(
