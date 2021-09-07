@@ -75,9 +75,6 @@ const shortcutItems = keys(shortcuts)
     return completion;
   });
 
-let orange = window.createOutputChannel("Orange");
-orange.appendLine(shortcutItems.map((i) => i.label).join());
-
 function registerProvider(context: ExtensionContext) {
   const showComponentTokens = workspace
     .getConfiguration()

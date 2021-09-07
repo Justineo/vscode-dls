@@ -68,7 +68,8 @@ const shortcutConfigs = createConfigs({
     lh: "dls-line-height",
   },
   shadow: {
-    s: "dls-shadow"
+    s: "dls-shadow",
+    l: "dls-shadow-light"
   }
 });
 
