@@ -4,7 +4,6 @@ import {
   ExtensionContext,
   CompletionItem,
   CompletionItemKind,
-  window,
 } from "vscode";
 import variables from "less-plugin-dls/variables.json";
 import { ignoredVariables, shortcuts } from "./config";
@@ -26,11 +25,11 @@ interface Variable {
 
 type VariableMap = Record<string, Variable>;
 
-enum CONFIG {
-  SHOW_COMPONENT_TOKENS = "DLS.showComponentTokens",
+enum Config {
+  showComponentTokens = "DLS.showComponentTokens",
 }
 
-const TypeMap = {
+const TYPE_MAP = {
   unknown: CompletionItemKind.Variable,
   keyword: CompletionItemKind.Keyword,
   color: CompletionItemKind.Color,
@@ -61,7 +60,7 @@ const shortcutItems = keys(shortcuts)
     const variable = vars[name];
     const completion = new CompletionItem(
       code.toUpperCase(),
-      TypeMap[variable.type]
+      TYPE_MAP[variable.type]
     );
 
     completion.documentation = normalizeMap[variable.value] || variable.value;
@@ -78,7 +77,7 @@ const shortcutItems = keys(shortcuts)
 function registerProvider(context: ExtensionContext) {
   const showComponentTokens = workspace
     .getConfiguration()
-    .get(CONFIG.SHOW_COMPONENT_TOKENS);
+    .get(Config.showComponentTokens);
 
   const provider = languages.registerCompletionItemProvider(
     ["less", "vue"],
@@ -97,7 +96,7 @@ function registerProvider(context: ExtensionContext) {
             const variable = vars[key];
             const completion = new CompletionItem(
               `@${key}`,
-              TypeMap[variable.type]
+              TYPE_MAP[variable.type]
             );
 
             completion.documentation =
@@ -121,7 +120,7 @@ export function activate(context: ExtensionContext) {
   let provider = registerProvider(context);
 
   workspace.onDidChangeConfiguration((e) => {
-    if (e.affectsConfiguration(CONFIG.SHOW_COMPONENT_TOKENS)) {
+    if (e.affectsConfiguration(Config.showComponentTokens)) {
       provider.dispose();
 
       registerProvider(context);
