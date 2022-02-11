@@ -3,7 +3,7 @@
     "module": "commonjs",
     "target": "es6",
     "outDir": "out",
-    "lib": ["ES2019"],
+    "lib": ["ESNext"],
     "esModuleInterop": true,
     "resolveJsonModule": true,
     "sourceMap": true,

@@ -1,5 +1,9 @@
 # Changelog
 
+## [2.2.0] - 2022-02-11
+
+- Added support in `<style lang="less">` blocks for `.vue` files.
+
 ## [2.1.0] - 2022-02-10
 
 - Updated to `less-plugin-dls@5.1.0`.
