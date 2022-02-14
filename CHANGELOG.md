@@ -1,5 +1,9 @@
 # Changelog
 
+## [2.2.2] - 2022-02-14
+
+- Bundle less-plugin-dls.
+
 ## [2.2.1] - 2022-02-14
 
 - Switched the bundler to esbuild.
