@@ -43,7 +43,7 @@ function createMappings(
 }
 
 function createConfigs<T extends string>(configs: MappingConfigs<T>) {
-  return configs
+  return configs;
 }
 
 const shortcutConfigs = createConfigs({

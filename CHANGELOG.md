@@ -1,5 +1,9 @@
 # Changelog
 
+## [2.2.1] - 2022-02-14
+
+- Switched the bundler to esbuild.
+
 ## [2.2.0] - 2022-02-11
 
 - Added support in `<style lang="less">` blocks for `.vue` files.
