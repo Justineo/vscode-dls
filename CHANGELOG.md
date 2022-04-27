@@ -1,5 +1,9 @@
 # Changelog
 
+## [2.2.4] - 2022-04-27
+
+- Bump version.
+
 ## [2.2.3] - 2022-04-27
 
 - Improve autocompletion icons.
