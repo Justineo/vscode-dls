@@ -2,7 +2,7 @@
   "name": "vscode-dls",
   "displayName": "Baidu DLS",
   "description": "Baidu DSL tooling for VS Code.",
-  "version": "2.2.3",
+  "version": "2.2.4",
   "engines": {
     "vscode": "^1.20.0"
   },
