@@ -1,5 +1,8 @@
 # Changelog
 
+## [2.2.3] - 2022-04-27
+
+- Improve autocompletion icons.
 ## [2.2.2] - 2022-02-14
 
 - Bundle less-plugin-dls.
