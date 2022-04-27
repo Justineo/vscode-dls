@@ -18,8 +18,10 @@ interface Variable {
     | "color"
     | "function"
     | "numeric"
+    | "font"
     | "length"
     | "string"
+    | "variable"
     | "complex";
   value: string;
   global: boolean;
@@ -34,14 +36,16 @@ enum Config {
 }
 
 const TYPE_MAP = {
-  unknown: CompletionItemKind.Variable,
+  unknown: CompletionItemKind.Value,
   keyword: CompletionItemKind.Keyword,
   color: CompletionItemKind.Color,
   function: CompletionItemKind.Function,
   numeric: CompletionItemKind.Value,
+  font: CompletionItemKind.Text,
   length: CompletionItemKind.Unit,
   string: CompletionItemKind.Text,
-  complex: CompletionItemKind.Variable,
+  complex: CompletionItemKind.Value,
+  variable: CompletionItemKind.Variable,
 };
 
 const normalizeMap: Record<string, string> = {
