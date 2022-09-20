@@ -10,7 +10,7 @@ specifiers:
   esbuild: ^0.14.21
   eslint: ^7.27.0
   glob: ^7.1.7
-  less-plugin-dls: ^9.2.0
+  less-plugin-dls: ^11.0.0
   mocha: ^8.4.0
   typescript: ^4.3.2
   vscode-test: ^1.5.2
@@ -25,7 +25,7 @@ devDependencies:
   esbuild: 0.14.38
   eslint: 7.32.0
   glob: 7.2.0
-  less-plugin-dls: 9.2.0
+  less-plugin-dls: 11.0.0
   mocha: 8.4.0
   typescript: 4.6.3
   vscode-test: 1.6.1
@@ -1244,8 +1244,8 @@ packages:
     resolution: {integrity: sha1-nbe1lJatPzz+8wp1FC0tkwrXJlE=}
     dev: true
 
-  /less-plugin-dls/9.2.0:
-    resolution: {integrity: sha512-L/IJk808lr7YKucRWwFHaHCXF3C51+/Up6GMmrKENNJzWqxH7krIk3Puk56jlIzlSbWwYNv30IRhrmXlMa5oww==}
+  /less-plugin-dls/11.0.0:
+    resolution: {integrity: sha512-Okxe6pYZ8/SVeYwM2jxUkjXDVGx7i9Kcrda2pYZWMzCgxLDebTQLPXJforkMnUMfJSIjFytlgp1Ka+wcuOb9gQ==}
     hasBin: true
     dependencies:
       arg: 4.1.3
