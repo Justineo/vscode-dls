@@ -1,5 +1,9 @@
 # Changelog
 
+## [2.4.0] - 2022-12-08
+
+- Updated to `less-plugin-dls@11.4.0`.
+
 ## [2.3.0] - 2022-09-20
 
 - Updated to `less-plugin-dls@11.0.0`.
