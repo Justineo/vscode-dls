@@ -64,20 +64,29 @@ const shortcutConfigs = createConfigs({
   radius: {
     r: "dls-border-radius",
   },
+  height: {
+    h: "dls-height",
+  },
   lineHeight: {
     lh: "dls-line-height",
   },
   shadow: {
     s: "dls-shadow",
-    l: "dls-shadow-light"
-  }
+    l: "dls-shadow-light",
+  },
+  spacing: {
+    s: "dls-spacing",
+  },
 });
 
-export const shortcuts: Record<keyof typeof shortcutConfigs, ShortcutMappings> = {
-  color: createMappings(shortcutConfigs.color, [0, 11]),
-  fontSize: createMappings(shortcutConfigs.fontSize, [0, 5]),
-  fontWeight: createMappings(shortcutConfigs.fontWeight, [1, 3]),
-  radius: createMappings(shortcutConfigs.radius, [0, 3]),
-  lineHeight: createMappings(shortcutConfigs.lineHeight, [1, 3]),
-  shadow: createMappings(shortcutConfigs.shadow, [1, 3]),
-};
+export const shortcuts: Record<keyof typeof shortcutConfigs, ShortcutMappings> =
+  {
+    color: createMappings(shortcutConfigs.color, [0, 11]),
+    fontSize: createMappings(shortcutConfigs.fontSize, [0, 6]),
+    fontWeight: createMappings(shortcutConfigs.fontWeight, [1, 3]),
+    radius: createMappings(shortcutConfigs.radius, [0, 3]),
+    height: createMappings(shortcutConfigs.height, ["xs", "s", "m", "l", "xl"]),
+    lineHeight: createMappings(shortcutConfigs.lineHeight, [1, 3]),
+    shadow: createMappings(shortcutConfigs.shadow, [1, 3]),
+    spacing: createMappings(shortcutConfigs.spacing, [1, 7]),
+  };
